@@ -1,0 +1,4 @@
+cur_hash = 272e94d4fc19a1595dbe7f6a679017ec
+s_flag = True
+s_interval = 60
+s_limit = 104

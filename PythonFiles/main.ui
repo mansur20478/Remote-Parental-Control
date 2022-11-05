@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>345</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>T&amp;C</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(213, 207, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="time_shower">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>391</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0px</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>Data</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Duration of use</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>345</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <widget class="QMenu" name="menuScreen_Saver">
+     <property name="title">
+      <string>Screen Saver</string>
+     </property>
+     <addaction name="s_flag_act"/>
+     <addaction name="s_limit_act"/>
+     <addaction name="s_interval_act"/>
+    </widget>
+    <widget class="QMenu" name="menuTelegram_Bot">
+     <property name="title">
+      <string>Telegram Bot</string>
+     </property>
+     <addaction name="actionToken"/>
+     <addaction name="actionTurn_on_off"/>
+     <addaction name="actionChange_password"/>
+    </widget>
+    <addaction name="menuTelegram_Bot"/>
+    <addaction name="separator"/>
+    <addaction name="menuScreen_Saver"/>
+    <addaction name="separator"/>
+    <addaction name="chpass_act"/>
+   </widget>
+   <widget class="QMenu" name="menuAboutg">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="guide_act"/>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="save_act"/>
+    <addaction name="clear_act"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuOptions"/>
+   <addaction name="menuAboutg"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCreator">
+   <property name="text">
+    <string>Creator</string>
+   </property>
+  </action>
+  <action name="guide_act">
+   <property name="text">
+    <string>Guide</string>
+   </property>
+  </action>
+  <action name="save_act">
+   <property name="text">
+    <string>Save history</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </action>
+  <action name="clear_act">
+   <property name="text">
+    <string>Clear history</string>
+   </property>
+  </action>
+  <action name="chpass_act">
+   <property name="text">
+    <string>Change Password</string>
+   </property>
+  </action>
+  <action name="s_limit_act">
+   <property name="text">
+    <string>Set count photo</string>
+   </property>
+  </action>
+  <action name="s_flag_act">
+   <property name="text">
+    <string>Turn on/off</string>
+   </property>
+  </action>
+  <action name="s_interval_act">
+   <property name="text">
+    <string>Set interval</string>
+   </property>
+  </action>
+  <action name="actionToken">
+   <property name="text">
+    <string>Token</string>
+   </property>
+  </action>
+  <action name="actionTurn_on_off">
+   <property name="text">
+    <string>Turn on/off</string>
+   </property>
+  </action>
+  <action name="actionChange_password">
+   <property name="text">
+    <string>Change password</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
